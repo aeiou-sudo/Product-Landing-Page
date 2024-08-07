@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: palegoldenrod;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(251, 204, 133);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 4rem;
+    z-index: 1000; /* Ensures the header stays on top */
+}
+@media only screen and (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        height: fit-content;
+    }
+}
+
+#header-img {
+    width: 15rem;
+}
+
+#nav-bar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-bar li {
+    margin: 0 1rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2em;
+    margin-top: 6rem; /* Adds space below the fixed header */
+}
+
+main {
+    padding: 2rem 2rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"] {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 20rem;
+    padding-left: 5rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 127, 80);
+    border-radius: 1rem;
+    color: white;
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+}
+
+footer {
+    background-color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5rem;
+    padding: 1rem;
+    height: 3rem;
+    align-items: center;
+}
+
+footer p {
+    display: inline-block;
+    /* margin: 0 1rem; */
+}
+
+.TROMBONE {
+    background-color: rgb(251, 204, 133);
+    padding: 1rem;
+    border-radius: 1rem;
+    flex: 1 1 calc(33.333% - 2rem); /* Ensures 3 items per row */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    /* text-align: left; */
+    justify-content: center;
+}
+
+.TROMBONE button {
+    background-color: rgba(255, 5, 5, 0.47);
+    border: none;
+    padding: 10px;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+.Items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    background-color: rgb(251, 204, 133);
+    border-radius: 5rem 1rem 5rem 5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
